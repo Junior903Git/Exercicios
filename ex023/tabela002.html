@@ -18,6 +18,7 @@
         table{
             width: 450px;
             border-collapse: collapse;
+            position: relative;
         }
         td,th{
             border: 1px solid black;
@@ -29,8 +30,18 @@
             color: white;
 
         }
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color:rgb(56, 56, 56) ;
+            
+        }
         .num{
             text-align: right;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgba(128, 128, 128, 0.644);
+
         }
     </style>
 </head>
